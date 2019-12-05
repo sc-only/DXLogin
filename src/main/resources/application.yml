@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-bp16p98uqp9s046737o.mysql.rds.aliyuncs.com:3306/dxlogin
+    username: root
+    password: Ccr13738756989
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  thymeleaf:
+    prefix: classpath:/templates/
+
+server:
+  port: 8008
+com:
+  ccr: ${server.port}
